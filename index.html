@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    <title>Animated Web Developer Template</title>
+    
+    <style>
+    
+    
+    
+    /* Importing Google font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  position: absolute;
+  top: -100px;
+  right: 0px;
+  width: 80px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+}
+nav .nav-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+}
+.nav-content .toggle-btn,
+.nav-content span a{
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+
+   
+}
+.nav-content .toggle-btn{
+  font-size: 35px;
+  color: #0e2431;
+  z-index: 100;
+  cursor: pointer;
+  
+  transform: rotate(-135deg);
+  transition: all 0.6s ease;
+
+   
+}
+nav.open .toggle-btn{
+  transform: rotate(0deg);
+}
+.nav-content span{
+  position: absolute;
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+nav.open .nav-content span{
+  transform: rotate(calc(var(--i) * (360deg/8))) translateY(120px);
+  opacity: 1;
+}
+.nav-content span a{
+  text-decoration: none;
+  transform: rotate(45deg);
+}
+.nav-content span a i{
+  font-size: 24px;
+  color: #0e2431;
+  transform: rotate(calc(var(--i) * (360deg/ -8)));
+  opacity: 0.8;
+  transition: 0.2s;
+}
+.nav-content span a:hover i{
+  opacity: 1;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+}
+
+h1 {
+    color: #000000;
+    font-size: 1.7rem;
+    font-weight: 600;
+    
+
+ 
+}
+
+h1 span {
+    color: #000000;
+    position: relative;
+
+  top:4840px; 
+margin-bottom:200px; 
+}
+
+h1 span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top:50%;
+    right: -8px;
+    background: #000000;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+h1 span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% { opacity: 0 }
+}
+   
+   
+   body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #FFFFFF;
+        }     
+
+        .g {
+            width: 220px;
+            height: 220px;
+        }
+
+       
+        .content {
+            text-align: center;
+            margin-top: 100px;
+            opacity: 0;
+            animation: slideInContent 1s ease forwards;
+            position: relative;
+        
+           top:250px;
+        }
+
+        .developer-container {
+            position: relative;
+            background-color: white;
+            border-radius: 50%;
+            width: 220px;
+            height: 220px;
+            margin: 0 auto 20px auto;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+       top:4800px;
+        
+           margin-bottom:px;
+           
+        }
+
+        .developer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .developer-info {
+            top: px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            font-weight: 100;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            padding: 0px;
+        }
+
+        .p {
+            font-weight: 500;
+            font-style: normal;
+            top: 2px;
+            font-size: 20px;
+        }
+        
+        
+        
+       
+      
+        
+       
+
+        @keyframes slideInContent {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+
+.about-me-container {
+  text-align: center;
+  margin-top: 0px; /* Adjust margin as needed */
+  opacity: 0;
+  
+  position: relative;
+  top: 510px; /* Adjust positioning as needed */
+  padding:20px;
+
+   margin-top: 2000px;
+   margin-bottom:650px;
+   
+   animation: slideInAboutMe 10s ease forwards;
+  animation-timeline: view();
+ 
+
+   animation-range: contain  00px 600px;
+}
+
+.about-me h2 {
+  color: #000000;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: 600;
+
+   
+   
+   
+}
+
+.about-me p {
+  color: #555555; /* Adjust text color as needed */
+  font-size: 1rem; /* Adjust font size as needed */
+  line-height: 1.6; /* Adjust line height as needed */
+  margin-top: 20px; /* Adjust margin as needed */
+
+
+
+}
+
+
+@keyframes slideInAboutMe {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Start from the right side */
+        filter: blur(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Move towards the left */
+        filter: blur(0);
+    }
+}
+/* Additional styling for project section */
+/* Additional styling for project section */
+.projects {
+    display: flex;
+    flex-direction: column; /* Change to vertical format */
+    align-items: center; /* Center the items horizontally */
+    
+   margin-bottom: 200px;
+}
+
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9); /* Start with a slightly smaller size */
+    }
+    to {
+        transform: scale(1.7); /* End with the original size */
+    }
+}
+
+
+@keyframes zoomIn2 {
+    from {
+        transform: scale(0.9); /* Start with a slightly smaller size */
+    }
+    to {
+        transform: scale(1.1); /* End with the original size */
+    }
+}
+
+
+
+
+@keyframes zoomIn3 {
+    from {
+        transform: scale(0.9); /* Start with a slightly smaller size */
+    }
+    to {
+        transform: scale(1.1); /* End with the original size */
+    }
+}
+.project img {
+    width: 100px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 200px;
+
+   animation: zoomIn 0.3s ease; 
+   animation-timeline: view();
+   
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 200px; /* Add space between description and next project */
+    padding: 10px;
+ animation: zoomIn3 0.3s ease;
+  animation-timeline: view();
+
+
+}
+
+.projects h1 {
+  color: #000000;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: 600;
+
+   margin-bottom:100px;
+   
+}
+
+
+.projects h2 {
+  color: #000000;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: 600;
+padding:10px;
+   margin-bottom:20px;
+   animation: zoomIn2 0.3s ease; 
+   animation-timeline: view();
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+   margin-bottom:100px;
+
+    
+}
+
+
+.skill-list li {
+    margin: 0 20px;
+list-style: none;
+   margin-bottom: 30px;
+
+   
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+   filter:blur(5px);
+    }
+    
+    5% {
+        opacity: 0.05;
+        transform: translateX(-95%);
+    }
+    
+    10% {
+        opacity: 0.1;
+        transform: translateX(-90%);
+    }
+    
+    15% {
+        opacity: 0.15;
+        transform: translateX(-85%);
+    }
+    
+    20% {
+        opacity: 0.2;
+        transform: translateX(-80%);
+    }
+    
+    25% {
+        opacity: 0.25;
+        transform: translateX(-75%);
+    }
+    
+    30% {
+        opacity: 0.3;
+        transform: translateX(-70%);
+    }
+    
+    35% {
+        opacity: 0.35;
+        transform: translateX(-65%);
+    }
+    
+    40% {
+        opacity: 0.4;
+        transform: translateX(-60%);
+    }
+    
+    45% {
+        opacity: 0.45;
+        transform: translateX(-55%);
+    }
+    
+    50% {
+        opacity: 0.5;
+        transform: translateX(-50%);
+    }
+    
+    55% {
+        opacity: 0.55;
+        transform: translateX(-45%);
+    }
+    
+    60% {
+        opacity: 0.6;
+        transform: translateX(-40%);
+    }
+    
+    65% {
+        opacity: 0.65;
+        transform: translateX(-35%);
+    }
+    
+    70% {
+        opacity: 0.7;
+        transform: translateX(-30%);
+    }
+    
+    75% {
+        opacity: 0.75;
+        transform: translateX(-25%);
+    }
+    
+    80% {
+        opacity: 0.8;
+        transform: translateX(-20%);
+    }
+    
+    85% {
+        opacity: 0.85;
+        transform: translateX(-15%);
+    }
+    
+    90% {
+        opacity: 0.9;
+        transform: translateX(-10%);
+    }
+    
+    95% {
+        opacity: 0.95;
+        transform: translateX(-5%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    
+       filter:blur(0);
+    }
+}
+
+.skill-list li i {
+    font-size: 2.5rem;
+    color: #555555;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+animation: slideIn 10s ease forwards;
+  animation-timeline: view();
+  animation-range:0px 200px;
+}
+
+.skill-list li span {
+    display: block;
+    color: #555555;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+
+   left:50px;
+}
+
+.skill-list li:hover i,
+.skill-list li:hover span {
+    color: #000000; /* Change color on hover */
+}
+
+.skills h2 {
+  color: #000000;
+  font-size: 1.5rem; /* Adjust font size as needed */
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+/* Contact section styles */
+
+
+.logos{
+   margin-bottom:300px;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.contact-form textarea {
+  width: 80%; /* Adjust width as needed */
+  max-width: 400px; /* Adjust max-width as needed */
+  height: 150px; /* Adjust height as needed */
+  margin-bottom: 400px; /* Adjust margin as needed */
+}
+  
+}
+.contact-title {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom:30px;
+
+   
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    
+   
+}
+.contact-intro{
+   margin-top: 400px;
+
+   
+}
+
+.form-group {
+    margin-bottom: 20px;
+ 
+}
+
+.form-label {
+    font-size: 1.1rem;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.form-input,
+.form-textarea {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-textarea {
+    resize: none;
+    height: 150px;
+}
+
+.form-submit {
+    background-color: #555555;
+    color:#FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+    background-color: #555555; /* Darker shade on hover */
+}
+
+
+
+    .pro{
+    
+    
+    
+    }
+    
+    
+    
+    footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+
+      margin-top:00px;
+    }
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #333333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.footer-text {
+    color: #555555;
+    font-size: 0.8rem;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    
+    5% {
+        opacity: 0.05;
+        transform: translateX(-95%);
+    }
+    
+    10% {
+        opacity: 0.1;
+        transform: translateX(-90%);
+    }
+    
+    15% {
+        opacity: 0.15;
+        transform: translateX(-85%);
+    }
+    
+    20% {
+        opacity: 0.2;
+        transform: translateX(-80%);
+    }
+    
+    25% {
+        opacity: 0.25;
+        transform: translateX(-75%);
+    }
+    
+    30% {
+        opacity: 0.3;
+        transform: translateX(-70%);
+    }
+    
+    35% {
+        opacity: 0.35;
+        transform: translateX(-65%);
+    }
+    
+    40% {
+        opacity: 0.4;
+        transform: translateX(-60%);
+    }
+    
+    45% {
+        opacity: 0.45;
+        transform: translateX(-55%);
+    }
+    
+    50% {
+        opacity: 0.5;
+        transform: translateX(-50%);
+    }
+    
+    55% {
+        opacity: 0.55;
+        transform: translateX(-45%);
+    }
+    
+    60% {
+        opacity: 0.6;
+        transform: translateX(-40%);
+    }
+    
+    65% {
+        opacity: 0.65;
+        transform: translateX(-35%);
+    }
+    
+    70% {
+        opacity: 0.7;
+        transform: translateX(-30%);
+    }
+    
+    75% {
+        opacity: 0.75;
+        transform: translateX(-25%);
+    }
+    
+    80% {
+        opacity: 0.8;
+        transform: translateX(-20%);
+    }
+    
+    85% {
+        opacity: 0.85;
+        transform: translateX(-15%);
+    }
+    
+    90% {
+        opacity: 0.9;
+        transform: translateX(-10%);
+    }
+    
+    95% {
+        opacity: 0.95;
+        transform: translateX(-5%);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 100px;
+    
+    position: relative;
+    
+    top: 40px; /* Adjust positioning as needed */
+    padding: 20px;
+    margin-top: 200px; /* Remove this line if not needed */
+    margin-bottom: 100px; /* Remove this line if not needed */
+
+   
+    
+    
+    
+}
+.form-group-container{
+   
+}
+
+
+  .slide-left-1 {
+        animation: slideInLeft 0.5s ease forwards;
+        animation-timeline:view();
+      animation-range: 00px 600px;  
+        animation-delay: 0.2s; /* Adjust delay for staggered effect */
+   
+    }
+
+    .slide-left-2 {
+        animation: slideInLeft 0.5s ease forwards;
+        animation-delay: 0.4s; /* Adjust delay for staggered effect */
+    
+       animation-timeline:view();
+       animation-range: 00px 500px;
+    }
+
+    .slide-left-3 {
+        animation: slideInLeft 0.5s ease forwards;
+        animation-delay: 0.6s; /* Adjust delay for staggered effect */
+    
+       animation-timeline:view();
+   
+   animation-range: 0px 400px;
+   }
+
+    .slide-left-4 {
+        animation: slideInLeft 4s ease forwards;
+        animation-delay: 0.8s; /* Adjust delay for staggered effect */
+    animation-timeline:view();
+     animation-range: 0px 300px;  
+    }
+
+    .slide-left-5 {
+        animation: slideInLeft 1s ease forwards;
+        animation-delay: s; /* Adjust delay for staggered effect */
+    animation-timeline:view();
+   animation-range: 00px 200px;    
+    }
+
+    </style>
+</head>
+
+   
+  <body>
+   
+    <div class="content">
+      
+        <div class="developer-container">
+            <img src="profile.jpeg" alt="Web Developer Image" class="g">
+           
+        </div>
+        <div class="developer-info">
+          
+        </div>
+        
+      <h1><span></span></h1>
+       <section class="about-me" id="about">
+    <div class="about-me-container">
+        <div class="about-me" id="about-me">
+           <div class="about-me-container">
+              <h2>About Me</h2>
+              <p>I'm a passionate web developer with a keen interest in creating beautiful and functional websites. With several years of experience in HTML, CSS, and JavaScript, I love turning ideas into reality through coding. My goal is to create user-friendly and responsive web solutions that exceed expectations.</p>
+              
+           </div>
+        </div>
+    </div>
+       </section>
+     <section class="skills"id ="skills">
+   
+    <div class = "logos">
+       
+     <h2>Skills</h2>
+    <ul class="skill-list">
+        <li>
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+        </li>
+        <li>
+            <i class="fab fa-js"></i>
+            <span>JavaScript</span>
+        </li>
+        <li>
+            <i class="fab fa-html5"></i>
+            <span>HTML</span>
+        </li>
+        <li>
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS</span>
+        </li>
+        <li>
+            <i class="fab fa-java"></i>
+            <span>Java</span>
+        </li>
+    </ul>
+    </div>
+</section>
+     
+     <section class="projects" id="projects">
+    <div class="pro">
+        <h1>Projects</h1>   
+        <div class="project">
+            <img src="payment_gateway_image.jpg" alt="Payment Gateway Image">
+            <h2>Custom Payment Gateway</h2>
+            <p>A custom payment gateway solution built from scratch to handle online transactions securely and efficiently.</p>
+        </div>
+        <div class="project">
+            <img src="youtube_channel_image.jpg" alt="YouTube Channel Image">
+            <h2>Educational YouTube Channel</h2>
+            <p>An educational YouTube channel featuring tutorials and educational content on various topics related to web development and programming.</p>
+        </div>
+        <div class="project">
+            <img src="ecommerce_website_image.jpg" alt="E-commerce Website Image">
+            <h2>E-commerce Website</h2>
+            <p>An e-commerce website developed using modern technologies to provide a seamless shopping experience for users.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section" id="contact-section">
+   <div class="contact-intro">
+      <h2 class="contact-title">Get in Touch</h2>
+      <p class="contact-description">
+         Fill out the form below and we'll get back to you as soon as possible.
+      </p>
+   </div>
+
+   <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+      <input type="hidden" name="access_key" value="965debf6-b0ab-4602-bda2-1fd1b02eb8cc" />
+      <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+      <input type="hidden" name="from_name" value="My Website" />
+      <!-- More customization options available in the docs: https://docs.web3forms.com -->
+
+      <div class="form-group-container">
+         <div class="form-group slide-left-1"> <!-- Add unique class name -->
+            <label for="name" class="form-label"></label>
+            <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+         </div>
+         <div class="form-group slide-left-2"> <!-- Add unique class name -->
+            <label for="email" class="form-label"></label>
+            <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+         </div>
+         <div class="form-group slide-left-3"> <!-- Add unique class name -->
+            <label for="phone" class="form-label"></label>
+            <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+         </div>
+         <div class="form-group slide-left-4"> <!-- Add unique class name -->
+            <label for="message" class="form-label"></label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+         </div>
+      </div>
+      <button class="form-submit slide-left-5" type="submit">Send Message</button>
+   </form>
+
+</section>
+
+
+  <footer>
+   <div class="social-icons">
+      <a href="#" class="social-icon">
+         <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="social-icon">
+         <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" class="social-icon">
+         <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="social-icon">
+         <i class="fab fa-linkedin"></i>
+      </a>
+   </div>
+   <p class="footer-text">© 2024 Animated Web Developer. All rights reserved.</p>
+</footer>
+
+    </div>
+    
+   
+   
+<nav id="navigation-menu">
+  <div class="nav-content">
+    <div class="toggle-btn" onclick="toggleMenu()">
+      <i class='bx bx-menu'></i>
+    </div>
+    <span style="--i:1;">
+      <a href="#skills"><i class='bx bxs-user'></i></a>
+    </span>
+    <span style="--i:2;">
+      <a href="#projects"><i class='bx bxs-envelope'></i></a>
+    </span>
+   <span style="--i:3;">
+         <a href="#contact-section"><i class='bx bxs-phone'></i></a>
+      </span>
+    </span>
+  </div>
+</nav>
+   
+ 
+   
+    <script>
+        
+// Load the YouTube Data API client library.
+
+
+function toggleMenu() {
+            var menu = document.getElementById('navigation-menu');
+            var icon = document.querySelector('.navigation-icon i');
+
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                icon.classList.remove('change-icon');
+                setTimeout(function () {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }, 300);
+            } else {
+                menu.classList.add('active');
+                icon.classList.remove('fa-bars');
+                setTimeout(function () {
+                    icon.classList.add('change-icon');
+                    icon.classList.add('fa-times');
+                }, 0);
+            }
+        }
+
+        function isInViewport(element) {
+            var rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        
+        
+        
+        
+        console.log('Hello World!');
+const dynamicText = document.querySelector("h1 span");
+const words = [" Hello I' m Vikram", " A Web Developer",'And Backend Developer',''];
+
+// Variables to track the position and deletion status of the word
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typeEffect = () => {
+    const currentWord = words[wordIndex];
+    const currentChar = currentWord.substring(0, charIndex);
+    dynamicText.textContent = currentChar;
+    dynamicText.classList.add("stop-blinking");
+
+    if (!isDeleting && charIndex < currentWord.length) {
+        // If condition is true, type the next character
+        charIndex++;
+        setTimeout(typeEffect, 200);
+    } else if (isDeleting && charIndex > 0) {
+        // If condition is true, remove the previous character
+        charIndex--;
+        setTimeout(typeEffect, 100);
+    } else {
+        // If word is deleted then switch to the next word
+        isDeleting = !isDeleting;
+        dynamicText.classList.remove("stop-blinking");
+        wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
+        setTimeout(typeEffect, 1200);
+    }
+}
+
+typeEffect();
+
+
+const nav = document.querySelector("nav"),
+        toggleBtn = nav.querySelector(".toggle-btn");
+
+    toggleBtn.addEventListener("click" , () =>{
+      nav.classList.toggle("open");
+    });
+
+  // js code to make draggable nav
+  function onDrag({movementY}) { //movementY gets mouse vertical value
+    const navStyle = window.getComputedStyle(nav), //getting all css style of nav
+          navTop = parseInt(navStyle.top), // getting nav top value & convert it into string
+          navHeight = parseInt(navStyle.height), // getting nav height value & convert it into string
+          windHeight = window.innerHeight; // getting window height
+
+    nav.style.top = navTop > 0 ? `${navTop + movementY}px` : "1px";
+    if(navTop > windHeight - navHeight){
+      nav.style.top = `${windHeight - navHeight}px`;
+    }
+  }
+
+  //this function will call when user click mouse's button and  move mouse on nav
+  nav.addEventListener("mousedown", () =>{
+    nav.addEventListener("mousemove", onDrag);
+  });
+
+  //these function will call when user relase mouse button and leave mouse from nav
+  nav.addEventListener("mouseup", () =>{
+    nav.removeEventListener("mousemove", onDrag);
+  });
+  nav.addEventListener("mouseleave", () =>{
+    nav.removeEventListener("mousemove", onDrag);
+  });
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+
